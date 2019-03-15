@@ -115,7 +115,7 @@ public protocol Encodable {
 }
 ```
 
-### Ugly Array
+### Inconvenient Array
 ```json
 {
   "item.3": "Delta",

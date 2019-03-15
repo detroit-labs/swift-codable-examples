@@ -1,5 +1,5 @@
 //
-//  UglyArray.swift
+//  InconvenientArray.swift
 //  Codable
 //
 //  Created by Nate Walczak on 9/27/18.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class UglyArray: Decodable {
+class InconvenientArray: Decodable {
     
     let elements: [String]
     

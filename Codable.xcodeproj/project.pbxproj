@@ -17,8 +17,8 @@
 		4334069D215DA875004B38B6 /* RatingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334069C215DA875004B38B6 /* RatingTests.swift */; };
 		4334069F215DACAD004B38B6 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334069E215DACAD004B38B6 /* Size.swift */; };
 		433406A1215DACEE004B38B6 /* SizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433406A0215DACEE004B38B6 /* SizeTests.swift */; };
-		433406A3215DB0F9004B38B6 /* UglyArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433406A2215DB0F9004B38B6 /* UglyArray.swift */; };
-		433406A5215DB12D004B38B6 /* UglyArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433406A4215DB12D004B38B6 /* UglyArrayTests.swift */; };
+		433406A3215DB0F9004B38B6 /* InconvenientArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433406A2215DB0F9004B38B6 /* InconvenientArray.swift */; };
+		433406A5215DB12D004B38B6 /* InconvenientArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433406A4215DB12D004B38B6 /* InconvenientArrayTests.swift */; };
 		433406A7215DB5EB004B38B6 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433406A6215DB5EB004B38B6 /* Contact.swift */; };
 		433406A9215DB661004B38B6 /* ContactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433406A8215DB661004B38B6 /* ContactTests.swift */; };
 		433406AB215DB848004B38B6 /* Sports.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433406AA215DB848004B38B6 /* Sports.swift */; };
@@ -62,8 +62,8 @@
 		4334069C215DA875004B38B6 /* RatingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingTests.swift; sourceTree = "<group>"; };
 		4334069E215DACAD004B38B6 /* Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
 		433406A0215DACEE004B38B6 /* SizeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeTests.swift; sourceTree = "<group>"; };
-		433406A2215DB0F9004B38B6 /* UglyArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UglyArray.swift; sourceTree = "<group>"; };
-		433406A4215DB12D004B38B6 /* UglyArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UglyArrayTests.swift; sourceTree = "<group>"; };
+		433406A2215DB0F9004B38B6 /* InconvenientArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InconvenientArray.swift; sourceTree = "<group>"; };
+		433406A4215DB12D004B38B6 /* InconvenientArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InconvenientArrayTests.swift; sourceTree = "<group>"; };
 		433406A6215DB5EB004B38B6 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		433406A8215DB661004B38B6 /* ContactTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTests.swift; sourceTree = "<group>"; };
 		433406AA215DB848004B38B6 /* Sports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sports.swift; sourceTree = "<group>"; };
@@ -182,7 +182,7 @@
 		433406C0215FBA94004B38B6 /* Array */ = {
 			isa = PBXGroup;
 			children = (
-				433406A2215DB0F9004B38B6 /* UglyArray.swift */,
+				433406A2215DB0F9004B38B6 /* InconvenientArray.swift */,
 			);
 			name = Array;
 			sourceTree = "<group>";
@@ -191,7 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				43340696215D6071004B38B6 /* ArrayTests.swift */,
-				433406A4215DB12D004B38B6 /* UglyArrayTests.swift */,
+				433406A4215DB12D004B38B6 /* InconvenientArrayTests.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -424,7 +424,7 @@
 				4334069B215DA80B004B38B6 /* Rating.swift in Sources */,
 				43340699215D62A3004B38B6 /* Collection.swift in Sources */,
 				4376E06E2164116D00B75727 /* Cat.swift in Sources */,
-				433406A3215DB0F9004B38B6 /* UglyArray.swift in Sources */,
+				433406A3215DB0F9004B38B6 /* InconvenientArray.swift in Sources */,
 				4376E06A2164111600B75727 /* Animal.swift in Sources */,
 				4334068D215D448F004B38B6 /* Name.swift in Sources */,
 				433406B7215FB728004B38B6 /* Item.swift in Sources */,
@@ -454,7 +454,7 @@
 				43340693215D5D76004B38B6 /* PetTests.swift in Sources */,
 				4376E074216411A500B75727 /* AnimalTests.swift in Sources */,
 				433406C8215FBC5C004B38B6 /* InvoiceTests.swift in Sources */,
-				433406A5215DB12D004B38B6 /* UglyArrayTests.swift in Sources */,
+				433406A5215DB12D004B38B6 /* InconvenientArrayTests.swift in Sources */,
 				433406A1215DACEE004B38B6 /* SizeTests.swift in Sources */,
 				433406B1215FAFB1004B38B6 /* AnotherNameTests.swift in Sources */,
 				433406A9215DB661004B38B6 /* ContactTests.swift in Sources */,

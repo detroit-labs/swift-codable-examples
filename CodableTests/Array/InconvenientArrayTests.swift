@@ -1,5 +1,5 @@
 //
-//  UglyArrayTests.swift
+//  InconvenientArrayTests.swift
 //  CodableTests
 //
 //  Created by Nate Walczak on 9/27/18.
@@ -10,7 +10,7 @@
 import XCTest
 @testable import Codable
 
-class UglyArrayTests: XCTestCase {
+class InconvenientArrayTests: XCTestCase {
     
     func testDecodable() {
         // Given
@@ -24,15 +24,15 @@ class UglyArrayTests: XCTestCase {
         """.data(using: .utf8)!
         
         // When
-        let uglyArray: UglyArray
+        let inconvenientArray: InconvenientArray
         do {
-            uglyArray = try JSONDecoder().decode(UglyArray.self, from: json)
+            inconvenientArray = try JSONDecoder().decode(InconvenientArray.self, from: json)
         } catch {
             XCTFail(error.localizedDescription)
             return
         }
         
-        let elements = uglyArray.elements
+        let elements = inconvenientArray.elements
         
         // Then
         XCTAssertEqual(elements.count, 4)
@@ -50,15 +50,15 @@ class UglyArrayTests: XCTestCase {
         """.data(using: .utf8)!
         
         // When
-        let uglyArray: UglyArray
+        let inconvenientArray: InconvenientArray
         do {
-            uglyArray = try JSONDecoder().decode(UglyArray.self, from: json)
+            inconvenientArray = try JSONDecoder().decode(InconvenientArray.self, from: json)
         } catch {
             XCTFail(error.localizedDescription)
             return
         }
         
-        let elements = uglyArray.elements
+        let elements = inconvenientArray.elements
         
         // Then
         XCTAssertEqual(elements.count, 2)
@@ -74,15 +74,15 @@ class UglyArrayTests: XCTestCase {
         """.data(using: .utf8)!
         
         // When
-        let uglyArray: UglyArray
+        let inconvenientArray: InconvenientArray
         do {
-            uglyArray = try JSONDecoder().decode(UglyArray.self, from: json)
+            inconvenientArray = try JSONDecoder().decode(InconvenientArray.self, from: json)
         } catch {
             XCTFail(error.localizedDescription)
             return
         }
         
-        let elements = uglyArray.elements
+        let elements = inconvenientArray.elements
         
         // Then
         XCTAssertEqual(elements.count, 0)
