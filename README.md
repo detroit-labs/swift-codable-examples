@@ -24,8 +24,8 @@ public protocol Encodable {
 ```
 
 ## Supported File Formats
-* JSON
-* Property List (.plist)
+* [JSON](#json-examples)
+* [Property List (.plist)](#property-list-examples)
 
 ## JSON Examples
 
@@ -33,12 +33,22 @@ public protocol Encodable {
 ```json
 {
   "first": "Steve",
-  "last": "Dave",
-  "age": 45,
-  "isFriendly": true,
-  "rating": "*****"
+  "last": "Dave"
 }
 ```
+- Implementation: [Name.swift](Codable/Source/Name.swift)
+- Tests: [NameTests.swift](CodableTests/Source/NameTests.swift)
+
+```json
+{
+  "name": "Gizmo",
+  "kind": "dog",
+  "age": 14,
+  "isFriendly": true
+}
+```
+- Implementation: [Pet.swift](Codable/Source/Pet.swift)
+- Tests: [PetTests.swift](CodableTests/Source/PetTests.swift)
 
 ### Nested
 ```json
@@ -50,6 +60,8 @@ public protocol Encodable {
   }
 }
 ```
+- Implementation: [Person.swift](Codable/Source/Person.swift)
+- Tests: [PersonTests.swift](CodableTests/Source/PersonTests.swift)
 
 ### Array
 ```json
@@ -59,6 +71,8 @@ public protocol Encodable {
   "bools": [true, true, false]
 }
 ```
+- Tests: [ArrayTests.swift](CodableTests/Source/ArrayTests.swift)
+, [NameTests.swift](CodableTests/Source/NameTests.swift)
 
 ### Common
 ```json
@@ -67,6 +81,8 @@ public protocol Encodable {
   "last-name": "Dave"
 }
 ```
+- Implementation: [Contact.swift](Codable/Source/Contact.swift)
+- Tests: [ContactTests.swift](CodableTests/Source/ContactTests.swift)
 
 ### Tuple
 ```json
@@ -74,6 +90,8 @@ public protocol Encodable {
   "dimension": [ 16, 9 ]
 }
 ```
+- Implementation: [Size.swift](Codable/Source/Size.swift)
+- Tests: [SizeTests.swift](CodableTests/Source/SizeTests.swift)
 
 ### Hierarchy
 ```json
@@ -91,6 +109,10 @@ public protocol Encodable {
   ]
 }
 ```
+- Implementation: [Invoice.swift](Codable/Source/Invoice.swift)
+, [Address.swift](Codable/Source/Address.swift)
+, [Item.swift](Codable/Source/Item.swift)
+- Tests: [InvoiceTests.swift](CodableTests/Source/InvoiceTests.swift)
 
 ## Inheritance
 ```json
@@ -105,6 +127,12 @@ public protocol Encodable {
   }
 }
 ```
+- Implementation: [Animal.swift](Codable/Source/Animal.swift)
+, [Cat.swift](Codable/Source/Cat.swift)
+, [Dog.swift](Codable/Source/Dog.swift)
+- Tests: [AnimalTests.swift](CodableTests/Source/AnimalTests.swift)
+, [CatTests.swift](CodableTests/Source/CatTests.swift)
+, [DogTests.swift](CodableTests/Source/DogTests.swift)
 
 ## Advanced JSON Examples
 
@@ -114,6 +142,8 @@ public protocol Encodable {
   "sports": [ "swimming", "running" ]
 }
 ```
+- Implementation: [Sports.swift](Codable/Source/Sports.swift)
+- Tests: [SportsTests.swift](CodableTests/Source/SportsTests.swift)
 
 ### Inconvenient Array
 ```json
@@ -124,3 +154,44 @@ public protocol Encodable {
   "item.1": "Bravo"
 }
 ```
+- Implementation: [InconvenientArray.swift](Codable/Source/InconvenientArray.swift)
+- Tests: [InconvenientArrayTests.swift](CodableTests/Source/InconvenientArrayTests.swift)
+
+## Property List Examples
+
+### Simple
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>first</key>
+    <string>Steve</string>
+    <key>last</key>
+    <string>Dave</string>
+  </dict>
+</plist>
+```
+- Implementation: [Name.swift](Codable/Source/Name.swift)
+- Tests: [NameTests.swift](CodableTests/Source/NameTests.swift)
+
+### Nested
+```json
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>age</key>
+    <integer>45</integer>
+    <key>name</key>
+    <dict>
+      <key>first</key>
+      <string>Steve</string>
+      <key>last</key>
+      <string>Dave</string>
+    </dict>
+  </dict>
+</plist>
+```
+- Implementation: [Person.swift](Codable/Source/Person.swift)
+- Tests: [PersonTests.swift](CodableTests/Source/PersonTests.swift)
