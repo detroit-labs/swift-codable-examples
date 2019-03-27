@@ -96,4 +96,39 @@ class PersonTests: XCTestCase {
         XCTAssertEqual(name?.count, 0)
     }
     
+    func testPropertyListDecodable() {
+        // Given
+        let json = """
+          <?xml version="1.0" encoding="UTF-8"?>
+          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+          <plist version="1.0">
+          <dict>
+            <key>age</key>
+            <integer>45</integer>
+            <key>name</key>
+            <dict>
+              <key>first</key>
+              <string>Steve</string>
+              <key>last</key>
+              <string>Dave</string>
+            </dict>
+          </dict>
+          </plist>
+        """.data(using: .utf8)!
+        
+        // When
+        let person: Person
+        do {
+            person = try PropertyListDecoder().decode(Person.self, from: json)
+        } catch {
+            XCTFail(error.localizedDescription)
+            return
+        }
+        
+        // Then
+        XCTAssertEqual(person.age, 45)
+        XCTAssertEqual(person.first, "Steve")
+        XCTAssertEqual(person.last, "Dave")
+    }
+    
 }

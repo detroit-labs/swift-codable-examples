@@ -117,6 +117,7 @@
 				433406B6215FB728004B38B6 /* Item.swift */,
 			);
 			name = Hierarchy;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		433406B9215FB7E7004B38B6 /* Simple */ = {
@@ -127,6 +128,7 @@
 				4334069A215DA80B004B38B6 /* Rating.swift */,
 			);
 			name = Simple;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		433406BA215FB7F7004B38B6 /* Simple */ = {
@@ -136,7 +138,8 @@
 				43340692215D5D76004B38B6 /* PetTests.swift */,
 				4334069C215DA875004B38B6 /* RatingTests.swift */,
 			);
-			path = Simple;
+			name = Simple;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		433406BB215FB804004B38B6 /* Foundation */ = {
@@ -145,6 +148,7 @@
 				43340698215D62A3004B38B6 /* Collection.swift */,
 			);
 			name = Foundation;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		433406BC215FB818004B38B6 /* OptionSet */ = {
@@ -153,6 +157,7 @@
 				433406AA215DB848004B38B6 /* Sports.swift */,
 			);
 			name = OptionSet;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		433406BD215FB821004B38B6 /* OptionSet */ = {
@@ -160,7 +165,8 @@
 			children = (
 				433406AC215DBA7D004B38B6 /* SportsTests.swift */,
 			);
-			path = OptionSet;
+			name = OptionSet;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		433406BE215FB852004B38B6 /* Tuple */ = {
@@ -169,6 +175,7 @@
 				4334069E215DACAD004B38B6 /* Size.swift */,
 			);
 			name = Tuple;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		433406BF215FB85C004B38B6 /* Tuple */ = {
@@ -176,7 +183,8 @@
 			children = (
 				433406A0215DACEE004B38B6 /* SizeTests.swift */,
 			);
-			path = Tuple;
+			name = Tuple;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		433406C0215FBA94004B38B6 /* Array */ = {
@@ -185,6 +193,7 @@
 				433406A2215DB0F9004B38B6 /* InconvenientArray.swift */,
 			);
 			name = Array;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		433406C1215FBAB3004B38B6 /* Array */ = {
@@ -193,7 +202,8 @@
 				43340696215D6071004B38B6 /* ArrayTests.swift */,
 				433406A4215DB12D004B38B6 /* InconvenientArrayTests.swift */,
 			);
-			path = Array;
+			name = Array;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		433406C2215FBAD3004B38B6 /* Common */ = {
@@ -203,6 +213,7 @@
 				433406A6215DB5EB004B38B6 /* Contact.swift */,
 			);
 			name = Common;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		433406C3215FBAE3004B38B6 /* Common */ = {
@@ -211,7 +222,8 @@
 				433406B0215FAFB1004B38B6 /* AnotherNameTests.swift */,
 				433406A8215DB661004B38B6 /* ContactTests.swift */,
 			);
-			path = Common;
+			name = Common;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		433406C6215FBC47004B38B6 /* Hierarchy */ = {
@@ -220,7 +232,7 @@
 				433406C7215FBC5C004B38B6 /* InvoiceTests.swift */,
 			);
 			name = Hierarchy;
-			path = Common;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		4376E067216410B900B75727 /* Inheritance */ = {
@@ -231,6 +243,7 @@
 				4376E06B2164113300B75727 /* Dog.swift */,
 			);
 			name = Inheritance;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		4376E068216410D500B75727 /* Inheritance */ = {
@@ -240,7 +253,8 @@
 				4376E0712164119F00B75727 /* CatTests.swift */,
 				4376E06F2164119800B75727 /* DogTests.swift */,
 			);
-			path = Inheritance;
+			name = Inheritance;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		43863C6C21677EB100DDF855 /* Nested */ = {
@@ -249,6 +263,7 @@
 				43863C6F216783EE00DDF855 /* Person.swift */,
 			);
 			name = Nested;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		43863C6D21677EB800DDF855 /* Nested */ = {
@@ -256,7 +271,8 @@
 			children = (
 				43863C71216784E700DDF855 /* PersonTests.swift */,
 			);
-			path = Nested;
+			name = Nested;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		43E8F283215D444B00C8814F = {
