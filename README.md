@@ -134,8 +134,6 @@ public protocol Encodable {
 , [CatTests.swift](CodableTests/Source/CatTests.swift)
 , [DogTests.swift](CodableTests/Source/DogTests.swift)
 
-## Advanced JSON Examples
-
 ### Option Set
 ```json
 {
@@ -156,6 +154,30 @@ public protocol Encodable {
 ```
 - Implementation: [InconvenientArray.swift](Codable/Source/InconvenientArray.swift)
 - Tests: [InconvenientArrayTests.swift](CodableTests/Source/InconvenientArrayTests.swift)
+
+### Date With Time (ISO8601)
+```json
+{
+  "origin": "Atlanta, GA",
+  "departure": "2019-03-28T08:15:02Z",
+  "destination": "Detroit, MI",
+  "arrival": "2019-04-01T18:45:20Z"
+}
+```
+- Implementation: [Trip.swift](Codable/Source/Trip.swift)
+- Tests: [TripTests.swift](CodableTests/Source/TripTests.swift)
+
+### Date Without Time
+```json
+{
+  "origin": "Atlanta, GA",
+  "departure": "2019-03-28",
+  "destination": "Detroit, MI",
+  "arrival": "2019-04-01"
+}
+```
+- Implementation: [Trip.swift](Codable/Source/Trip.swift)
+- Tests: [TripTests.swift](CodableTests/Source/TripTests.swift)
 
 ## Property List Examples
 

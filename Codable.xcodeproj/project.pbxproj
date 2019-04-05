@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		432022B6224BDEA000F86912 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432022B5224BDEA000F86912 /* Trip.swift */; };
+		432022B9224BDECE00F86912 /* TripTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432022B8224BDECE00F86912 /* TripTests.swift */; };
 		4334068D215D448F004B38B6 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334068C215D448F004B38B6 /* Name.swift */; };
 		4334068F215D593E004B38B6 /* NameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4334068E215D593E004B38B6 /* NameTests.swift */; };
 		43340691215D5D57004B38B6 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43340690215D5D57004B38B6 /* Pet.swift */; };
@@ -52,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		432022B5224BDEA000F86912 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		432022B8224BDECE00F86912 /* TripTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTests.swift; sourceTree = "<group>"; };
 		4334068C215D448F004B38B6 /* Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
 		4334068E215D593E004B38B6 /* NameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameTests.swift; sourceTree = "<group>"; };
 		43340690215D5D57004B38B6 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
@@ -109,6 +113,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		432022B4224BD42C00F86912 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				432022B5224BDEA000F86912 /* Trip.swift */,
+			);
+			name = Date;
+			path = Source;
+			sourceTree = "<group>";
+		};
+		432022B7224BDEAA00F86912 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				432022B8224BDECE00F86912 /* TripTests.swift */,
+			);
+			name = Date;
+			path = Source;
+			sourceTree = "<group>";
+		};
 		433406B8215FB7B0004B38B6 /* Hierarchy */ = {
 			isa = PBXGroup;
 			children = (
@@ -300,6 +322,7 @@
 				433406C0215FBA94004B38B6 /* Array */,
 				43E8F290215D444B00C8814F /* Codable.h */,
 				433406C2215FBAD3004B38B6 /* Common */,
+				432022B4224BD42C00F86912 /* Date */,
 				433406BB215FB804004B38B6 /* Foundation */,
 				433406B8215FB7B0004B38B6 /* Hierarchy */,
 				43E8F291215D444B00C8814F /* Info.plist */,
@@ -317,6 +340,7 @@
 			children = (
 				433406C1215FBAB3004B38B6 /* Array */,
 				433406C3215FBAE3004B38B6 /* Common */,
+				432022B7224BDEAA00F86912 /* Date */,
 				433406C6215FBC47004B38B6 /* Hierarchy */,
 				43E8F29D215D444B00C8814F /* Info.plist */,
 				4376E068216410D500B75727 /* Inheritance */,
@@ -445,6 +469,7 @@
 				4334068D215D448F004B38B6 /* Name.swift in Sources */,
 				433406B7215FB728004B38B6 /* Item.swift in Sources */,
 				433406B3215FB631004B38B6 /* Address.swift in Sources */,
+				432022B6224BDEA000F86912 /* Trip.swift in Sources */,
 				433406AB215DB848004B38B6 /* Sports.swift in Sources */,
 				4376E06C2164113300B75727 /* Dog.swift in Sources */,
 				433406A7215DB5EB004B38B6 /* Contact.swift in Sources */,
@@ -461,6 +486,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4334069D215DA875004B38B6 /* RatingTests.swift in Sources */,
+				432022B9224BDECE00F86912 /* TripTests.swift in Sources */,
 				43340697215D6071004B38B6 /* ArrayTests.swift in Sources */,
 				43863C72216784E700DDF855 /* PersonTests.swift in Sources */,
 				433406AD215DBA7D004B38B6 /* SportsTests.swift in Sources */,
