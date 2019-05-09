@@ -93,7 +93,7 @@ class InvoiceTests: XCTestCase {
         
         invoice.items = [
             Item(sku: "I001", name: "Labs Beats V1", quantity: 4),
-            Item(sku: "I002", name: "Labs Beats V2", quantity: 8),
+            Item(sku: "I002", name: "Labs Beats V2", quantity: 8)
         ]
         
         // When
@@ -213,7 +213,7 @@ class InvoiceTests: XCTestCase {
         
         invoice.items = [
             Item(sku: "I001", name: "Labs Beats V1", quantity: 4),
-            Item(sku: "I002", name: "Labs Beats V2", quantity: 8),
+            Item(sku: "I002", name: "Labs Beats V2", quantity: 8)
         ]
         
         // When

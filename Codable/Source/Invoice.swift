@@ -36,8 +36,7 @@ class Invoice: Codable {
         let includeItems = decoder.userInfo[.includeInvoiceItems] as? Bool ?? true
         if includeItems {
             self.items = try container.decodeIfPresent([Item].self, forKey: .items) ?? []
-        }
-        else {
+        } else {
             self.items = []
         }
     }

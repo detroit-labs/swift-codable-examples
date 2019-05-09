@@ -6,7 +6,6 @@
 //  Copyright © 2018 Detroit Labs. All rights reserved.
 //
 
-
 import XCTest
 @testable import Codable
 

@@ -11,16 +11,16 @@ import Foundation
 extension Collection {
     
     var second: Element? {
-        var i = makeIterator()
-        _ = i.next()
-        return i.next()
+        var iterator = makeIterator()
+        _ = iterator.next()
+        return iterator.next()
     }
     
     var third: Element? {
-        var i = makeIterator()
-        _ = i.next()
-        _ = i.next()
-        return i.next()
+        var iterator = makeIterator()
+        _ = iterator.next()
+        _ = iterator.next()
+        return iterator.next()
     }
     
 }
