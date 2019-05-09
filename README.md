@@ -36,8 +36,10 @@ public protocol Encodable {
   "last": "Dave"
 }
 ```
-- Implementation: [Name.swift](Codable/Source/Name.swift)
-- Tests: [NameTests.swift](CodableTests/Source/NameTests.swift)
+- Implementation: [Name.swift](Codable/Source/Name.swift),
+[AnotherName.swift](Codable/Source/AnotherName.swift)
+- Tests: [NameTests.swift](CodableTests/Source/NameTests.swift),
+[AnotherNameTests.swift](CodableTests/Source/AnotherNameTests.swift)
 
 ```json
 {
@@ -71,8 +73,8 @@ public protocol Encodable {
   "bools": [true, true, false]
 }
 ```
-- Tests: [ArrayTests.swift](CodableTests/Source/ArrayTests.swift)
-, [NameTests.swift](CodableTests/Source/NameTests.swift)
+- Tests: [ArrayTests.swift](CodableTests/Source/ArrayTests.swift),
+[NameTests.swift](CodableTests/Source/NameTests.swift)
 
 ### Common
 ```json
@@ -109,9 +111,9 @@ public protocol Encodable {
   ]
 }
 ```
-- Implementation: [Invoice.swift](Codable/Source/Invoice.swift)
-, [Address.swift](Codable/Source/Address.swift)
-, [Item.swift](Codable/Source/Item.swift)
+- Implementation: [Invoice.swift](Codable/Source/Invoice.swift),
+[Address.swift](Codable/Source/Address.swift),
+[Item.swift](Codable/Source/Item.swift)
 - Tests: [InvoiceTests.swift](CodableTests/Source/InvoiceTests.swift)
 
 ## Inheritance
@@ -127,12 +129,12 @@ public protocol Encodable {
   }
 }
 ```
-- Implementation: [Animal.swift](Codable/Source/Animal.swift)
-, [Cat.swift](Codable/Source/Cat.swift)
-, [Dog.swift](Codable/Source/Dog.swift)
-- Tests: [AnimalTests.swift](CodableTests/Source/AnimalTests.swift)
-, [CatTests.swift](CodableTests/Source/CatTests.swift)
-, [DogTests.swift](CodableTests/Source/DogTests.swift)
+- Implementation: [Animal.swift](Codable/Source/Animal.swift),
+[Cat.swift](Codable/Source/Cat.swift),
+[Dog.swift](Codable/Source/Dog.swift)
+- Tests: [AnimalTests.swift](CodableTests/Source/AnimalTests.swift),
+[CatTests.swift](CodableTests/Source/CatTests.swift),
+[DogTests.swift](CodableTests/Source/DogTests.swift)
 
 ### Option Set
 ```json
