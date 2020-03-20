@@ -181,6 +181,29 @@ public protocol Encodable {
 - Implementation: [Trip.swift](Codable/Source/Trip.swift)
 - Tests: [TripTests.swift](CodableTests/Source/TripTests.swift)
 
+### Empty Collection
+```json
+{
+  "mother": {
+    "first-name": "Anne",
+    "last-name": "Dave"
+  },
+  "father": {
+    "first-name": "Steve",
+    "last-name": "Dave"
+  },
+  "brother": {
+  }
+}
+```
+- Resources: [NilOnEmpty.swift](Codable/Source/NilOnEmpty.swift),
+[RawCodingKeys.swift](Codable/Source/RawCodingKeys.swift)
+- Implementation: [AnotherFamily.swift](Codable/Source/AnotherFamily.swift),
+[CorruptFamily.swift](Codable/Source/CorruptFamily.swift),
+[Family.swift](Codable/Source/Family.swift)
+- Tests: [AnotherFamilyTests.swift](CodableTests/Source/AnotherFamilyTests.swift),
+[CorruptFamilyTests.swift](CodableTests/Source/CorruptFamilyTests.swift)
+
 ## Property List Examples
 
 ### Simple

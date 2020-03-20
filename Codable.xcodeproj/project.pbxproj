@@ -39,6 +39,14 @@
 		4376E074216411A500B75727 /* AnimalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4376E073216411A500B75727 /* AnimalTests.swift */; };
 		43863C70216783EE00DDF855 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43863C6F216783EE00DDF855 /* Person.swift */; };
 		43863C72216784E700DDF855 /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43863C71216784E700DDF855 /* PersonTests.swift */; };
+		43891E2C24251C4C00FC4992 /* NilOnEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43891E2B24251C4C00FC4992 /* NilOnEmpty.swift */; };
+		43891E2E24251C6000FC4992 /* RawCodingKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43891E2D24251C6000FC4992 /* RawCodingKeys.swift */; };
+		43891E342425509D00FC4992 /* CorruptFamilyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43891E322425509D00FC4992 /* CorruptFamilyTests.swift */; };
+		43891E352425509D00FC4992 /* AnotherFamilyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43891E332425509D00FC4992 /* AnotherFamilyTests.swift */; };
+		43891E38242550A500FC4992 /* AnotherFamily.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43891E36242550A400FC4992 /* AnotherFamily.swift */; };
+		43891E39242550A500FC4992 /* CorruptFamily.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43891E37242550A500FC4992 /* CorruptFamily.swift */; };
+		43891E3B2425594E00FC4992 /* Family.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43891E3A2425594D00FC4992 /* Family.swift */; };
+		43891E3D24255A5400FC4992 /* FamilyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43891E3C24255A5400FC4992 /* FamilyTests.swift */; };
 		43E8F297215D444B00C8814F /* Codable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E8F28D215D444B00C8814F /* Codable.framework */; };
 		43E8F29E215D444B00C8814F /* Codable.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E8F290215D444B00C8814F /* Codable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -87,6 +95,14 @@
 		43863C6E21677F8B00DDF855 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		43863C6F216783EE00DDF855 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		43863C71216784E700DDF855 /* PersonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
+		43891E2B24251C4C00FC4992 /* NilOnEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NilOnEmpty.swift; sourceTree = "<group>"; };
+		43891E2D24251C6000FC4992 /* RawCodingKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawCodingKeys.swift; sourceTree = "<group>"; };
+		43891E322425509D00FC4992 /* CorruptFamilyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorruptFamilyTests.swift; sourceTree = "<group>"; };
+		43891E332425509D00FC4992 /* AnotherFamilyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnotherFamilyTests.swift; sourceTree = "<group>"; };
+		43891E36242550A400FC4992 /* AnotherFamily.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnotherFamily.swift; sourceTree = "<group>"; };
+		43891E37242550A500FC4992 /* CorruptFamily.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorruptFamily.swift; sourceTree = "<group>"; };
+		43891E3A2425594D00FC4992 /* Family.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Family.swift; sourceTree = "<group>"; };
+		43891E3C24255A5400FC4992 /* FamilyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FamilyTests.swift; sourceTree = "<group>"; };
 		43E8F28D215D444B00C8814F /* Codable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Codable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E8F290215D444B00C8814F /* Codable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Codable.h; sourceTree = "<group>"; };
 		43E8F291215D444B00C8814F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -297,6 +313,30 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		43891E2824251B8E00FC4992 /* Empty */ = {
+			isa = PBXGroup;
+			children = (
+				43891E36242550A400FC4992 /* AnotherFamily.swift */,
+				43891E37242550A500FC4992 /* CorruptFamily.swift */,
+				43891E3A2425594D00FC4992 /* Family.swift */,
+				43891E2B24251C4C00FC4992 /* NilOnEmpty.swift */,
+				43891E2D24251C6000FC4992 /* RawCodingKeys.swift */,
+			);
+			name = Empty;
+			path = Source;
+			sourceTree = "<group>";
+		};
+		43891E2F24251DA600FC4992 /* Empty */ = {
+			isa = PBXGroup;
+			children = (
+				43891E332425509D00FC4992 /* AnotherFamilyTests.swift */,
+				43891E322425509D00FC4992 /* CorruptFamilyTests.swift */,
+				43891E3C24255A5400FC4992 /* FamilyTests.swift */,
+			);
+			name = Empty;
+			path = Source;
+			sourceTree = "<group>";
+		};
 		43E8F283215D444B00C8814F = {
 			isa = PBXGroup;
 			children = (
@@ -323,6 +363,7 @@
 				43E8F290215D444B00C8814F /* Codable.h */,
 				433406C2215FBAD3004B38B6 /* Common */,
 				432022B4224BD42C00F86912 /* Date */,
+				43891E2824251B8E00FC4992 /* Empty */,
 				433406BB215FB804004B38B6 /* Foundation */,
 				433406B8215FB7B0004B38B6 /* Hierarchy */,
 				43E8F291215D444B00C8814F /* Info.plist */,
@@ -341,6 +382,7 @@
 				433406C1215FBAB3004B38B6 /* Array */,
 				433406C3215FBAE3004B38B6 /* Common */,
 				432022B7224BDEAA00F86912 /* Date */,
+				43891E2F24251DA600FC4992 /* Empty */,
 				433406C6215FBC47004B38B6 /* Hierarchy */,
 				43E8F29D215D444B00C8814F /* Info.plist */,
 				4376E068216410D500B75727 /* Inheritance */,
@@ -485,7 +527,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43891E2C24251C4C00FC4992 /* NilOnEmpty.swift in Sources */,
 				4334069B215DA80B004B38B6 /* Rating.swift in Sources */,
+				43891E2E24251C6000FC4992 /* RawCodingKeys.swift in Sources */,
 				43340699215D62A3004B38B6 /* Collection.swift in Sources */,
 				4376E06E2164116D00B75727 /* Cat.swift in Sources */,
 				433406A3215DB0F9004B38B6 /* InconvenientArray.swift in Sources */,
@@ -496,9 +540,12 @@
 				432022B6224BDEA000F86912 /* Trip.swift in Sources */,
 				433406AB215DB848004B38B6 /* Sports.swift in Sources */,
 				4376E06C2164113300B75727 /* Dog.swift in Sources */,
+				43891E38242550A500FC4992 /* AnotherFamily.swift in Sources */,
 				433406A7215DB5EB004B38B6 /* Contact.swift in Sources */,
+				43891E3B2425594E00FC4992 /* Family.swift in Sources */,
 				43340691215D5D57004B38B6 /* Pet.swift in Sources */,
 				433406AF215FAF13004B38B6 /* AnotherName.swift in Sources */,
+				43891E39242550A500FC4992 /* CorruptFamily.swift in Sources */,
 				4334069F215DACAD004B38B6 /* Size.swift in Sources */,
 				43863C70216783EE00DDF855 /* Person.swift in Sources */,
 				433406B5215FB6FE004B38B6 /* Invoice.swift in Sources */,
@@ -516,14 +563,17 @@
 				433406AD215DBA7D004B38B6 /* SportsTests.swift in Sources */,
 				4334068F215D593E004B38B6 /* NameTests.swift in Sources */,
 				4376E0722164119F00B75727 /* CatTests.swift in Sources */,
+				43891E342425509D00FC4992 /* CorruptFamilyTests.swift in Sources */,
 				4376E0702164119800B75727 /* DogTests.swift in Sources */,
 				43340693215D5D76004B38B6 /* PetTests.swift in Sources */,
 				4376E074216411A500B75727 /* AnimalTests.swift in Sources */,
 				433406C8215FBC5C004B38B6 /* InvoiceTests.swift in Sources */,
+				43891E352425509D00FC4992 /* AnotherFamilyTests.swift in Sources */,
 				433406A5215DB12D004B38B6 /* InconvenientArrayTests.swift in Sources */,
 				433406A1215DACEE004B38B6 /* SizeTests.swift in Sources */,
 				433406B1215FAFB1004B38B6 /* AnotherNameTests.swift in Sources */,
 				433406A9215DB661004B38B6 /* ContactTests.swift in Sources */,
+				43891E3D24255A5400FC4992 /* FamilyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
