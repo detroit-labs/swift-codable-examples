@@ -38,7 +38,7 @@ class PetTests: XCTestCase {
         XCTAssertEqual(pet.isFriendly, true)
     }
     
-    func testArrayDecodable() {
+    func testArrayDecodable() throws {
         // Given
         let json = """
           [
@@ -59,15 +59,17 @@ class PetTests: XCTestCase {
         // Then
         XCTAssertEqual(pets.count, 2)
         
-        XCTAssertEqual(pets.first?.name, "Gizmo")
-        XCTAssertEqual(pets.first?.kind, .dog)
-        XCTAssertEqual(pets.first?.age, 14)
-        XCTAssertEqual(pets.first?.isFriendly, true)
+        let firstPet = try XCTUnwrap(pets.first)
+        XCTAssertEqual(firstPet.name, "Gizmo")
+        XCTAssertEqual(firstPet.kind, .dog)
+        XCTAssertEqual(firstPet.age, 14)
+        XCTAssertEqual(firstPet.isFriendly, true)
         
-        XCTAssertEqual(pets.second?.name, "Mr. White")
-        XCTAssertEqual(pets.second?.kind, .cat)
-        XCTAssertEqual(pets.second?.age, 3)
-        XCTAssertEqual(pets.second?.isFriendly, false)
+        let secondPet = try XCTUnwrap(pets.second)
+        XCTAssertEqual(secondPet.name, "Mr. White")
+        XCTAssertEqual(secondPet.kind, .cat)
+        XCTAssertEqual(secondPet.age, 3)
+        XCTAssertEqual(secondPet.isFriendly, false)
     }
     
     func testEmptyArrayDecodable() {
