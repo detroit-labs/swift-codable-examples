@@ -31,12 +31,14 @@
 		433406B5215FB6FE004B38B6 /* Invoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433406B4215FB6FE004B38B6 /* Invoice.swift */; };
 		433406B7215FB728004B38B6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433406B6215FB728004B38B6 /* Item.swift */; };
 		433406C8215FBC5C004B38B6 /* InvoiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433406C7215FBC5C004B38B6 /* InvoiceTests.swift */; };
+		436330A9243BB1240054ADAF /* SafeDecodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436330A8243BB1240054ADAF /* SafeDecodableTests.swift */; };
 		4376E06A2164111600B75727 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4376E0692164111600B75727 /* Animal.swift */; };
 		4376E06C2164113300B75727 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4376E06B2164113300B75727 /* Dog.swift */; };
 		4376E06E2164116D00B75727 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4376E06D2164116D00B75727 /* Cat.swift */; };
 		4376E0702164119800B75727 /* DogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4376E06F2164119800B75727 /* DogTests.swift */; };
 		4376E0722164119F00B75727 /* CatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4376E0712164119F00B75727 /* CatTests.swift */; };
 		4376E074216411A500B75727 /* AnimalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4376E073216411A500B75727 /* AnimalTests.swift */; };
+		4382A8D32437896A005C03F1 /* SafeDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4382A8D22437896A005C03F1 /* SafeDecodable.swift */; };
 		43863C70216783EE00DDF855 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43863C6F216783EE00DDF855 /* Person.swift */; };
 		43863C72216784E700DDF855 /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43863C71216784E700DDF855 /* PersonTests.swift */; };
 		43891E2C24251C4C00FC4992 /* NilOnEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43891E2B24251C4C00FC4992 /* NilOnEmpty.swift */; };
@@ -86,12 +88,14 @@
 		433406B4215FB6FE004B38B6 /* Invoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invoice.swift; sourceTree = "<group>"; };
 		433406B6215FB728004B38B6 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		433406C7215FBC5C004B38B6 /* InvoiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceTests.swift; sourceTree = "<group>"; };
+		436330A8243BB1240054ADAF /* SafeDecodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeDecodableTests.swift; sourceTree = "<group>"; };
 		4376E0692164111600B75727 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		4376E06B2164113300B75727 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		4376E06D2164116D00B75727 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
 		4376E06F2164119800B75727 /* DogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogTests.swift; sourceTree = "<group>"; };
 		4376E0712164119F00B75727 /* CatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatTests.swift; sourceTree = "<group>"; };
 		4376E073216411A500B75727 /* AnimalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTests.swift; sourceTree = "<group>"; };
+		4382A8D22437896A005C03F1 /* SafeDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafeDecodable.swift; sourceTree = "<group>"; };
 		43863C6E21677F8B00DDF855 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		43863C6F216783EE00DDF855 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		43863C71216784E700DDF855 /* PersonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
@@ -273,6 +277,15 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		436330A7243BB1050054ADAF /* Safe */ = {
+			isa = PBXGroup;
+			children = (
+				436330A8243BB1240054ADAF /* SafeDecodableTests.swift */,
+			);
+			name = Safe;
+			path = Source;
+			sourceTree = "<group>";
+		};
 		4376E067216410B900B75727 /* Inheritance */ = {
 			isa = PBXGroup;
 			children = (
@@ -292,6 +305,15 @@
 				4376E06F2164119800B75727 /* DogTests.swift */,
 			);
 			name = Inheritance;
+			path = Source;
+			sourceTree = "<group>";
+		};
+		4382A8D1243788F1005C03F1 /* Safe */ = {
+			isa = PBXGroup;
+			children = (
+				4382A8D22437896A005C03F1 /* SafeDecodable.swift */,
+			);
+			name = Safe;
 			path = Source;
 			sourceTree = "<group>";
 		};
@@ -370,6 +392,7 @@
 				4376E067216410B900B75727 /* Inheritance */,
 				43863C6C21677EB100DDF855 /* Nested */,
 				433406BC215FB818004B38B6 /* OptionSet */,
+				4382A8D1243788F1005C03F1 /* Safe */,
 				433406B9215FB7E7004B38B6 /* Simple */,
 				433406BE215FB852004B38B6 /* Tuple */,
 			);
@@ -388,6 +411,7 @@
 				4376E068216410D500B75727 /* Inheritance */,
 				43863C6D21677EB800DDF855 /* Nested */,
 				433406BD215FB821004B38B6 /* OptionSet */,
+				436330A7243BB1050054ADAF /* Safe */,
 				433406BA215FB7F7004B38B6 /* Simple */,
 				433406BF215FB85C004B38B6 /* Tuple */,
 			);
@@ -540,6 +564,7 @@
 				432022B6224BDEA000F86912 /* Trip.swift in Sources */,
 				433406AB215DB848004B38B6 /* Sports.swift in Sources */,
 				4376E06C2164113300B75727 /* Dog.swift in Sources */,
+				4382A8D32437896A005C03F1 /* SafeDecodable.swift in Sources */,
 				43891E38242550A500FC4992 /* AnotherFamily.swift in Sources */,
 				433406A7215DB5EB004B38B6 /* Contact.swift in Sources */,
 				43891E3B2425594E00FC4992 /* Family.swift in Sources */,
@@ -559,6 +584,7 @@
 				4334069D215DA875004B38B6 /* RatingTests.swift in Sources */,
 				432022B9224BDECE00F86912 /* TripTests.swift in Sources */,
 				43340697215D6071004B38B6 /* ArrayTests.swift in Sources */,
+				436330A9243BB1240054ADAF /* SafeDecodableTests.swift in Sources */,
 				43863C72216784E700DDF855 /* PersonTests.swift in Sources */,
 				433406AD215DBA7D004B38B6 /* SportsTests.swift in Sources */,
 				4334068F215D593E004B38B6 /* NameTests.swift in Sources */,

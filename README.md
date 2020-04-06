@@ -204,6 +204,23 @@ public protocol Encodable {
 - Tests: [AnotherFamilyTests.swift](CodableTests/Source/AnotherFamilyTests.swift),
 [CorruptFamilyTests.swift](CodableTests/Source/CorruptFamilyTests.swift)
 
+### Safe Decodable
+```json
+[
+  {
+    "sku": "I001",
+    "name": "Labs Beats V1",
+  },
+  {
+    "sku": "I002",
+    "name": "Labs Beats V2",
+    "quantity": 8
+  }
+]
+```
+- Resources: [SafeDecodable.swift](Codable/Source/SafeDecodable.swift)
+- Tests: [SafeDecodableTests.swift](CodableTests/Source/SafeDecodableTests.swift)
+
 ## Property List Examples
 
 ### Simple
