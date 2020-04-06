@@ -11,7 +11,7 @@ import XCTest
 
 class FamilyTests: XCTestCase {
     
-    func testDecodable() {
+    func testDecodable() throws {
         // Given
         let json = """
           {
@@ -38,15 +38,17 @@ class FamilyTests: XCTestCase {
         }
         
         // Then
-        XCTAssertEqual(family.mother?.firstName, "Anne")
-        XCTAssertEqual(family.mother?.lastName, "Dave")
+        let mother = try XCTUnwrap(family.mother)
+        XCTAssertEqual(mother.firstName, "Anne")
+        XCTAssertEqual(mother.lastName, "Dave")
         
-        XCTAssertEqual(family.father?.firstName, "Steve")
-        XCTAssertEqual(family.father?.lastName, "Dave")
+        let father = try XCTUnwrap(family.father)
+        XCTAssertEqual(father.firstName, "Steve")
+        XCTAssertEqual(father.lastName, "Dave")
         
-        XCTAssertNotNil(family.brother)
-        XCTAssertNil(family.brother?.firstName)
-        XCTAssertNil(family.brother?.lastName)
+        let brother = try XCTUnwrap(family.brother)
+        XCTAssertNil(brother.firstName)
+        XCTAssertNil(brother.lastName)
 
         XCTAssertNil(family.sister)
     }

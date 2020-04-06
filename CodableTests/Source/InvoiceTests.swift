@@ -11,7 +11,7 @@ import XCTest
 
 class InvoiceTests: XCTestCase {
     
-    func testDecodable() {
+    func testDecodable() throws {
         // Given
         let json = """
           {
@@ -38,24 +38,22 @@ class InvoiceTests: XCTestCase {
             return
         }
         
-        let shippingAddress = invoice.shippingAddress
-        let billingAddress = invoice.billingAddress
-        let items = invoice.items
-        
         // Then
-        XCTAssertNotNil(shippingAddress)
-        XCTAssertEqual(shippingAddress?.name, "Detroit Labs")
-        XCTAssertEqual(shippingAddress?.city, "Detroit")
-        XCTAssertEqual(shippingAddress?.state, "MI")
+        let shippingAddress = try XCTUnwrap(invoice.shippingAddress)
+        XCTAssertEqual(shippingAddress.name, "Detroit Labs")
+        XCTAssertEqual(shippingAddress.city, "Detroit")
+        XCTAssertEqual(shippingAddress.state, "MI")
         
-        XCTAssertNotNil(billingAddress)
-        XCTAssertEqual(billingAddress?.name, "Paula Goodski")
+        let billingAddress = try XCTUnwrap(invoice.billingAddress)
+        XCTAssertEqual(billingAddress.name, "Paula Goodski")
         
+        let items = invoice.items
         XCTAssertEqual(items.count, 1)
         
-        XCTAssertEqual(items.first?.sku, "I001")
-        XCTAssertEqual(items.first?.name, "Labs Beats V1")
-        XCTAssertEqual(items.first?.quantity, 10_000)
+        let firstItem = try XCTUnwrap(items.first)
+        XCTAssertEqual(firstItem.sku, "I001")
+        XCTAssertEqual(firstItem.name, "Labs Beats V1")
+        XCTAssertEqual(firstItem.quantity, 10_000)
     }
     
     func testOptionalDecodable() {
@@ -160,7 +158,7 @@ class InvoiceTests: XCTestCase {
         XCTAssertEqual(json?.count, 0)
     }
     
-    func testDecodableWithoutItems() {
+    func testDecodableWithoutItems() throws {
         // Given
         let json = """
           {
@@ -189,19 +187,16 @@ class InvoiceTests: XCTestCase {
             return
         }
         
-        let shippingAddress = invoice.shippingAddress
-        let billingAddress = invoice.billingAddress
-        let items = invoice.items
-        
         // Then
-        XCTAssertNotNil(shippingAddress)
-        XCTAssertEqual(shippingAddress?.name, "Detroit Labs")
-        XCTAssertEqual(shippingAddress?.city, "Detroit")
-        XCTAssertEqual(shippingAddress?.state, "MI")
+        let shippingAddress = try XCTUnwrap(invoice.shippingAddress)
+        XCTAssertEqual(shippingAddress.name, "Detroit Labs")
+        XCTAssertEqual(shippingAddress.city, "Detroit")
+        XCTAssertEqual(shippingAddress.state, "MI")
         
-        XCTAssertNotNil(billingAddress)
-        XCTAssertEqual(billingAddress?.name, "Paula Goodski")
+        let billingAddress = try XCTUnwrap(invoice.billingAddress)
+        XCTAssertEqual(billingAddress.name, "Paula Goodski")
         
+        let items = invoice.items
         XCTAssertEqual(items.count, 0)
     }
     

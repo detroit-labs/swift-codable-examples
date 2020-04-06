@@ -34,7 +34,7 @@ class NameTests: XCTestCase {
         XCTAssertEqual(name.last, "Dave")
     }
     
-    func testArrayDecodable() {
+    func testArrayDecodable() throws {
         // Given
         let json = """
           [
@@ -56,14 +56,17 @@ class NameTests: XCTestCase {
         // Then
         XCTAssertEqual(names.count, 3)
         
-        XCTAssertEqual(names.first?.first, "Gwen")
-        XCTAssertEqual(names.first?.last, "Stacy")
+        let firstName = try XCTUnwrap(names.first)
+        XCTAssertEqual(firstName.first, "Gwen")
+        XCTAssertEqual(firstName.last, "Stacy")
         
-        XCTAssertEqual(names.second?.first, "Betty")
-        XCTAssertEqual(names.second?.last, "Brant")
+        let secondName = try XCTUnwrap(names.second)
+        XCTAssertEqual(secondName.first, "Betty")
+        XCTAssertEqual(secondName.last, "Brant")
         
-        XCTAssertEqual(names.third?.first, "Mary Jane")
-        XCTAssertEqual(names.third?.last, "Watson")
+        let thirdName = try XCTUnwrap(names.third)
+        XCTAssertEqual(thirdName.first, "Mary Jane")
+        XCTAssertEqual(thirdName.last, "Watson")
     }
     
     func testEmptyArrayDecodable() {
