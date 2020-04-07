@@ -221,6 +221,17 @@ public protocol Encodable {
 - Resources: [SafeDecodable.swift](Codable/Source/SafeDecodable.swift)
 - Tests: [SafeDecodableTests.swift](CodableTests/Source/SafeDecodableTests.swift)
 
+### Decode Shorthand
+```json
+{
+  "name": "Office Space",
+  "address": "123 Main St"
+}
+```
+- Resources: [KeyedDecodingContainer.swift](Codable/Source/KeyedDecodingContainer.swift)
+- Implementation: [Building.swift](Codable/Source/Building.swift)
+- Tests: [BuildingTests.swift](CodableTests/Source/BuildingTests.swift)
+
 ## Property List Examples
 
 ### Simple
