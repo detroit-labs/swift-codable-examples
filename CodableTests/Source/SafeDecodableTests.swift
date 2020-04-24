@@ -13,13 +13,13 @@ class SafeDecodableTests: XCTestCase {
     
     func testValue() throws {
         // Given
-        let json = """
+        let json = Data("""
           {
             "sku": "I001",
             "name": "Labs Beats V1",
             "quantity": 10000
           }
-        """.data(using: .utf8)!
+        """.utf8)
         
         // When
         let safeItem: SafeDecodable<Item>
@@ -42,12 +42,12 @@ class SafeDecodableTests: XCTestCase {
     
     func testError() {
         // Given
-        let json = """
+        let json = Data("""
           {
             "sku": "I001",
             "name": "Labs Beats V1"
           }
-        """.data(using: .utf8)!
+        """.utf8)
         
         // When
         let safeItem: SafeDecodable<Item>
@@ -66,7 +66,7 @@ class SafeDecodableTests: XCTestCase {
     
     func testValues() throws {
         // Given
-        let json = """
+        let json = Data("""
           [
             {
               "sku": "I001",
@@ -82,7 +82,7 @@ class SafeDecodableTests: XCTestCase {
               "name": "Labs Beats V3",
             }
           ]
-        """.data(using: .utf8)!
+        """.utf8)
         
         // When
         let safeItems: [SafeDecodable<Item>]

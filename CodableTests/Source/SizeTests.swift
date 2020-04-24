@@ -13,9 +13,9 @@ class SizeTests: XCTestCase {
     
     func testDecodable() {
         // Given
-        let json = """
+        let json = Data("""
           [ 16, 9 ]
-        """.data(using: .utf8)!
+        """.utf8)
         
         // When
         let size: Size

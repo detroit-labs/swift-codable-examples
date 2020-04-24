@@ -13,12 +13,12 @@ class DogTests: XCTestCase {
     
     func testDecodable() {
         // Given
-        let json = """
+        let json = Data("""
           {
             "name": "Skippy",
             "numberOfBones": 1
           }
-        """.data(using: .utf8)!
+        """.utf8)
         
         // When
         let dog: Dog

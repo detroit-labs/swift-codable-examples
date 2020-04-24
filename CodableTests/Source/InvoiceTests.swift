@@ -13,7 +13,7 @@ class InvoiceTests: XCTestCase {
     
     func testDecodable() throws {
         // Given
-        let json = """
+        let json = Data("""
           {
             "shipping-address": {
               "name": "Detroit Labs",
@@ -27,7 +27,7 @@ class InvoiceTests: XCTestCase {
               { "sku": "I001", "name": "Labs Beats V1", "quantity": 10000 }
             ]
           }
-        """.data(using: .utf8)!
+        """.utf8)
         
         // When
         let invoice: Invoice
@@ -58,10 +58,10 @@ class InvoiceTests: XCTestCase {
     
     func testOptionalDecodable() {
         // Given
-        let json = """
+        let json = Data("""
           {
           }
-        """.data(using: .utf8)!
+        """.utf8)
         
         // When
         let invoice: Invoice
@@ -160,7 +160,7 @@ class InvoiceTests: XCTestCase {
     
     func testDecodableWithoutItems() throws {
         // Given
-        let json = """
+        let json = Data("""
           {
             "shipping-address": {
               "name": "Detroit Labs",
@@ -174,7 +174,7 @@ class InvoiceTests: XCTestCase {
               { "sku": "I001", "name": "Labs Beats V1", "quantity": 10000 }
             ]
           }
-        """.data(using: .utf8)!
+        """.utf8)
         
         // When
         let invoice: Invoice

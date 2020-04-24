@@ -13,7 +13,7 @@ class FamilyTests: XCTestCase {
     
     func testDecodable() throws {
         // Given
-        let json = """
+        let json = Data("""
           {
             "mother": {
               "first-name": "Anne",
@@ -26,7 +26,7 @@ class FamilyTests: XCTestCase {
             "brother": {
             }
           }
-        """.data(using: .utf8)!
+        """.utf8)
         
         // When
         let family: Family

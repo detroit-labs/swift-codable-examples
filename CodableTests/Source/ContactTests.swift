@@ -13,12 +13,12 @@ class ContactTests: XCTestCase {
     
     func testDecodable() {
         // Given
-        let json = """
+        let json = Data("""
           {
             "first-name": "Steve",
             "last-name": "Dave"
           }
-        """.data(using: .utf8)!
+        """.utf8)
         
         // When
         let contact: Contact

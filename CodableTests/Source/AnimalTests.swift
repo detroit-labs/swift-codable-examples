@@ -13,11 +13,11 @@ class AnimalTests: XCTestCase {
     
     func testDecodable() {
         // Given
-        let json = """
+        let json = Data("""
           {
             "name": "Little Moo"
           }
-        """.data(using: .utf8)!
+        """.utf8)
         
         // When
         let animal: Animal

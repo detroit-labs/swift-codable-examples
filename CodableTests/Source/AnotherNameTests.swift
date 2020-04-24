@@ -13,12 +13,12 @@ class AnotherNameTests: XCTestCase {
     
     func testDecodable() {
         // Given
-        let json = """
+        let json = Data("""
           {
             "first": "Steve",
             "last": "Dave"
           }
-        """.data(using: .utf8)!
+        """.utf8)
         
         // When
         let name: AnotherName
@@ -36,12 +36,12 @@ class AnotherNameTests: XCTestCase {
     
     func testArrayDecodable() throws {
         // Given
-        let json = """
+        let json = Data("""
           [
             { "first": "Gwen", "last": "Stacy" },
             { "first": "John", "last": "Doe" }
           ]
-        """.data(using: .utf8)!
+        """.utf8)
         
         // When
         let names: [AnotherName]
@@ -66,10 +66,10 @@ class AnotherNameTests: XCTestCase {
     
     func testEmptyArrayDecodable() {
         // Given
-        let json = """
+        let json = Data("""
           [
           ]
-        """.data(using: .utf8)!
+        """.utf8)
         
         // When
         let names: [AnotherName]

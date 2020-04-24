@@ -28,12 +28,12 @@ class SportsTests: XCTestCase {
     
     func testDecodable() {
         // Given
-        let json = """
+        let json = Data("""
           [
             "swimming",
             "running"
           ]
-        """.data(using: .utf8)!
+        """.utf8)
         
         // When
         let sports: Sports

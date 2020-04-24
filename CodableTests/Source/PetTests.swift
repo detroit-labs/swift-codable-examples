@@ -13,14 +13,14 @@ class PetTests: XCTestCase {
     
     func testDecodable() {
         // Given
-        let json = """
+        let json = Data("""
           {
             "name": "Gizmo",
             "kind": "dog",
             "age": 14,
             "isFriendly": true
           }
-        """.data(using: .utf8)!
+        """.utf8)
         
         // When
         let pet: Pet
@@ -40,12 +40,12 @@ class PetTests: XCTestCase {
     
     func testArrayDecodable() throws {
         // Given
-        let json = """
+        let json = Data("""
           [
             { "name": "Gizmo", "kind": "dog", "age": 14, "isFriendly": true },
             { "name": "Mr. White", "kind": "cat", "age": 3, "isFriendly": false }
           ]
-        """.data(using: .utf8)!
+        """.utf8)
         
         // When
         let pets: [Pet]
@@ -74,10 +74,10 @@ class PetTests: XCTestCase {
     
     func testEmptyArrayDecodable() {
         // Given
-        let json = """
+        let json = Data("""
           [
           ]
-        """.data(using: .utf8)!
+        """.utf8)
         
         // When
         let pets: [Pet]

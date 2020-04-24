@@ -13,14 +13,14 @@ class InconvenientArrayTests: XCTestCase {
     
     func testDecodable() {
         // Given
-        let json = """
+        let json = Data("""
           {
             "item.3": "Delta",
             "item.0": "Alfa",
             "item.2": "Charlie",
             "item.1": "Bravo"
           }
-        """.data(using: .utf8)!
+        """.utf8)
         
         // When
         let inconvenientArray: InconvenientArray
@@ -41,12 +41,12 @@ class InconvenientArrayTests: XCTestCase {
     
     func testTwoItemDecodable() {
         // Given
-        let json = """
+        let json = Data("""
           {
             "item.0": "Alfa",
             "item.1": "Bravo"
           }
-        """.data(using: .utf8)!
+        """.utf8)
         
         // When
         let inconvenientArray: InconvenientArray
@@ -67,10 +67,10 @@ class InconvenientArrayTests: XCTestCase {
     
     func testEmptyDictionaryDecodable() {
         // Given
-        let json = """
+        let json = Data("""
           {
           }
-        """.data(using: .utf8)!
+        """.utf8)
         
         // When
         let inconvenientArray: InconvenientArray

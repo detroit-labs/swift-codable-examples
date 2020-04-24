@@ -29,7 +29,7 @@ class RatingTests: XCTestCase {
     
     func testDecodable() {
         // Given
-        let json = """
+        let json = Data("""
           [
             "*",
             "**",
@@ -37,7 +37,7 @@ class RatingTests: XCTestCase {
             "****",
             "*****"
           ]
-        """.data(using: .utf8)!
+        """.utf8)
         
         // When
         let ratings: [Rating]

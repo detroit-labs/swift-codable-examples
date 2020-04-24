@@ -13,7 +13,7 @@ class PersonTests: XCTestCase {
     
     func testDecodable() {
         // Given
-        let json = """
+        let json = Data("""
           {
             "age": 45,
             "name": {
@@ -21,7 +21,7 @@ class PersonTests: XCTestCase {
               "last": "Dave"
             }
           }
-        """.data(using: .utf8)!
+        """.utf8)
         
         // When
         let person: Person
@@ -98,7 +98,7 @@ class PersonTests: XCTestCase {
     
     func testPropertyListDecodable() {
         // Given
-        let json = """
+        let json = Data("""
           <?xml version="1.0" encoding="UTF-8"?>
           <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
           <plist version="1.0">
@@ -114,7 +114,7 @@ class PersonTests: XCTestCase {
             </dict>
           </dict>
           </plist>
-        """.data(using: .utf8)!
+        """.utf8)
         
         // When
         let person: Person

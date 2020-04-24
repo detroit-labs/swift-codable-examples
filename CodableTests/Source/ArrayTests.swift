@@ -13,9 +13,9 @@ class ArrayTests: XCTestCase {
     
     func testStrings() {
         // Given
-        let json = """
+        let json = Data("""
           ["Red", "Green", "Blue"]
-        """.data(using: .utf8)!
+        """.utf8)
         
         // When
         let strings: [String]
@@ -32,9 +32,9 @@ class ArrayTests: XCTestCase {
     
     func testIntegers() {
         // Given
-        let json = """
+        let json = Data("""
           [1, 3, 5, 7, 9]
-        """.data(using: .utf8)!
+        """.utf8)
         
         // When
         let integers: [Int]
@@ -51,9 +51,9 @@ class ArrayTests: XCTestCase {
     
     func testBooleans() {
         // Given
-        let json = """
+        let json = Data("""
           [true, true, false]
-        """.data(using: .utf8)!
+        """.utf8)
         
         // When
         let booleans: [Bool]

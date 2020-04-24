@@ -13,12 +13,12 @@ class CatTests: XCTestCase {
     
     func testDecodable() {
         // Given
-        let json = """
+        let json = Data("""
           {
             "name": "Fluffy",
             "lenghtOfTail": 6
           }
-        """.data(using: .utf8)!
+        """.utf8)
         
         // When
         let cat: Cat

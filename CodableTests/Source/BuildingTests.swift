@@ -13,12 +13,12 @@ class BuildingTests: XCTestCase {
     
     func testDecodable() {
         // Given
-        let json = """
+        let json = Data("""
           {
             "name": "Office Space",
             "address": "123 Main St"
           }
-        """.data(using: .utf8)!
+        """.utf8)
         
         // When
         let building: Building
@@ -36,11 +36,11 @@ class BuildingTests: XCTestCase {
     
     func testOptionalDecodable() {
         // Given
-        let json = """
+        let json = Data("""
           {
             "name": "Office Space"
           }
-        """.data(using: .utf8)!
+        """.utf8)
         
         // When
         let building: Building

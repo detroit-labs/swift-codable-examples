@@ -13,12 +13,12 @@ class NameTests: XCTestCase {
     
     func testDecodable() {
         // Given
-        let json = """
+        let json = Data("""
           {
             "first": "Steve",
             "last": "Dave"
           }
-        """.data(using: .utf8)!
+        """.utf8)
         
         // When
         let name: Name
@@ -36,13 +36,13 @@ class NameTests: XCTestCase {
     
     func testArrayDecodable() throws {
         // Given
-        let json = """
+        let json = Data("""
           [
             { "first": "Gwen", "last": "Stacy" },
             { "first": "Betty", "last": "Brant" },
             { "first": "Mary Jane", "last": "Watson" }
           ]
-        """.data(using: .utf8)!
+        """.utf8)
         
         // When
         let names: [Name]
@@ -71,10 +71,10 @@ class NameTests: XCTestCase {
     
     func testEmptyArrayDecodable() {
         // Given
-        let json = """
+        let json = Data("""
           [
           ]
-        """.data(using: .utf8)!
+        """.utf8)
         
         // When
         let names: [Name]
@@ -139,7 +139,7 @@ class NameTests: XCTestCase {
     
     func testPropertyListDecodable() {
         // Given
-        let json = """
+        let json = Data("""
           <?xml version="1.0" encoding="UTF-8"?>
           <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
           <plist version="1.0">
@@ -150,7 +150,7 @@ class NameTests: XCTestCase {
             <string>Dave</string>
           </dict>
           </plist>
-        """.data(using: .utf8)!
+        """.utf8)
         
         // When
         let name: Name
