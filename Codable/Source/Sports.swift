@@ -12,7 +12,7 @@ struct Sports: OptionSet, CaseIterable, Codable {
     
     let rawValue: Int
     
-    init(rawValue: RawValue) {
+    init(rawValue: Int) {
         self.rawValue = rawValue
     }
     
