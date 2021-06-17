@@ -54,6 +54,8 @@
 		43891E3D24255A5400FC4992 /* FamilyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43891E3C24255A5400FC4992 /* FamilyTests.swift */; };
 		43E8F297215D444B00C8814F /* Codable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E8F28D215D444B00C8814F /* Codable.framework */; };
 		43E8F29E215D444B00C8814F /* Codable.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E8F290215D444B00C8814F /* Codable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43EEE8862678445B002DF9F6 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EEE8852678445B002DF9F6 /* Vehicle.swift */; };
+		43EEE88B2679901E002DF9F6 /* VehicleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EEE88A2679901E002DF9F6 /* VehicleTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +120,8 @@
 		43E8F291215D444B00C8814F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43E8F296215D444B00C8814F /* CodableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E8F29D215D444B00C8814F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43EEE8852678445B002DF9F6 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		43EEE88A2679901E002DF9F6 /* VehicleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -411,6 +415,7 @@
 				433406C2215FBAD3004B38B6 /* Common */,
 				432022B4224BD42C00F86912 /* Date */,
 				43891E2824251B8E00FC4992 /* Empty */,
+				43EEE8842678443D002DF9F6 /* Enum */,
 				433406BB215FB804004B38B6 /* Foundation */,
 				433406B8215FB7B0004B38B6 /* Hierarchy */,
 				43E8F291215D444B00C8814F /* Info.plist */,
@@ -432,6 +437,7 @@
 				433406C3215FBAE3004B38B6 /* Common */,
 				432022B7224BDEAA00F86912 /* Date */,
 				43891E2F24251DA600FC4992 /* Empty */,
+				43EEE88926798FF5002DF9F6 /* Enum */,
 				433406C6215FBC47004B38B6 /* Hierarchy */,
 				43E8F29D215D444B00C8814F /* Info.plist */,
 				4376E068216410D500B75727 /* Inheritance */,
@@ -443,6 +449,24 @@
 				433406BF215FB85C004B38B6 /* Tuple */,
 			);
 			path = CodableTests;
+			sourceTree = "<group>";
+		};
+		43EEE8842678443D002DF9F6 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				43EEE8852678445B002DF9F6 /* Vehicle.swift */,
+			);
+			name = Enum;
+			path = Source;
+			sourceTree = "<group>";
+		};
+		43EEE88926798FF5002DF9F6 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				43EEE88A2679901E002DF9F6 /* VehicleTests.swift */,
+			);
+			name = Enum;
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -588,6 +612,7 @@
 				4376E06A2164111600B75727 /* Animal.swift in Sources */,
 				4334068D215D448F004B38B6 /* Name.swift in Sources */,
 				433406B7215FB728004B38B6 /* Item.swift in Sources */,
+				43EEE8862678445B002DF9F6 /* Vehicle.swift in Sources */,
 				433406B3215FB631004B38B6 /* Address.swift in Sources */,
 				432022B6224BDEA000F86912 /* Trip.swift in Sources */,
 				436330AE243CC0B10054ADAF /* Building.swift in Sources */,
@@ -621,6 +646,7 @@
 				43891E342425509D00FC4992 /* CorruptFamilyTests.swift in Sources */,
 				4376E0702164119800B75727 /* DogTests.swift in Sources */,
 				43340693215D5D76004B38B6 /* PetTests.swift in Sources */,
+				43EEE88B2679901E002DF9F6 /* VehicleTests.swift in Sources */,
 				4376E074216411A500B75727 /* AnimalTests.swift in Sources */,
 				433406C8215FBC5C004B38B6 /* InvoiceTests.swift in Sources */,
 				43891E352425509D00FC4992 /* AnotherFamilyTests.swift in Sources */,

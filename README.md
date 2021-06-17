@@ -204,6 +204,46 @@ public protocol Encodable {
 - Tests: [AnotherFamilyTests.swift](CodableTests/Source/AnotherFamilyTests.swift),
 [CorruptFamilyTests.swift](CodableTests/Source/CorruptFamilyTests.swift)
 
+### Enum with Associated Values
+```json
+[
+  {
+    "bicycle": {}
+  },
+  {
+    "boat": {
+      "floats": true
+    }
+  },
+  {
+    "car": {
+      "year": 2016,
+      "make": "Tesla",
+      "model": "Model S"
+    }
+  },
+  {
+    "limo": {
+      "_0": "Black",
+      "something": true,
+      "_2": 8
+    }
+  },
+  {
+    "truck": {
+      "wheels": 18
+    }
+  },
+  {
+    "van": {
+      "contents": ["Wrench", "Hammer"]
+    }
+  }
+]
+```
+- Resources: [Vehicle.swift](Codable/Source/Vehicle.swift)
+- Tests: [VehicleTests.swift](CodableTests/Source/VehicleTests.swift)
+
 ### Safe Decodable
 ```json
 [
